@@ -163,4 +163,14 @@ function my_theme_register_required_plugins() {
 		'before_title'  => '<h1 class="">',
 		'after_title'   => '</h1>',
 	) );
+	
+	
+	register_sidebar( array(
+		'name'          => __( 'block-social', 'forefront' ),
+		'id'            => 'blocksocial',
+		'before_widget' => '<div id="socialmedia" class="">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h1 class="">',
+		'after_title'   => '</h1>',
+	) );
 

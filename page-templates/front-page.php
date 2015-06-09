@@ -56,6 +56,7 @@ get_header(); ?>
 
 	<?php get_sidebar( 'front-page-two' ); ?>
 	
+	
 
 	<?php $testimonials = forefront_get_random_posts( 2, 'jetpack-testimonial' ); ?>
 
