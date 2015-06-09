@@ -97,8 +97,8 @@ span.leerzeichen::before {
 
 .widget-title, .sidebar-widget-area .widgettitle, .sidebar-widget-area .widget-title {
 	padding: .1em;
-	color: white;
-	background-color: #84B414;
+	color: #84B414;
+	/*background-color: #84B414;*/
 	display: inline-block;
 }
 
