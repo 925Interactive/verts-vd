@@ -300,9 +300,11 @@ span.leerzeichen::before {
 	background-color: #305F05;
 	border: none;
 	border-radius: 20px 20px 0 0px;
+	padding: 30px 0 0 0;
 
 }
 
 .site-footer{
 	background-color: #305F05;
+	padding-top: 0px;
 }
