@@ -144,5 +144,23 @@ function my_theme_register_required_plugins() {
     );
 
     tgmpa( $plugins, $config );
+    
+    
+    
+
 
 }
+
+    /**
+ * Register widgetized area and update sidebar with default widgets
+ */
+
+	register_sidebar( array(
+		'name'          => __( 'block-action', 'forefront' ),
+		'id'            => 'blockaction',
+		'before_widget' => '<div id="%1$s" class="action%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+

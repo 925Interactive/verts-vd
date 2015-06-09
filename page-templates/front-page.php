@@ -49,10 +49,13 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
+	 <?php dynamic_sidebar( 'blockaction' ); //Sidebar pour dont contact et newsletter  ?> 
+	 <?php get_sidebar(); ?> 
 
 	<?php get_sidebar( 'front-page-one' ); ?>
 
 	<?php get_sidebar( 'front-page-two' ); ?>
+	
 
 	<?php $testimonials = forefront_get_random_posts( 2, 'jetpack-testimonial' ); ?>
 
