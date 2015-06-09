@@ -41,6 +41,19 @@ body {
 	position: relative;
 }
 
+/** widget Acton = Faire un don | devenir membre  **/
+#action-w{
+	width: 95%;
+	margin: auto;
+	background-color: #F7F9F7;
+	padding: 20px;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+
+
 @media screen and (min-width: 1230px) {
 	.site-header,.site-main,.site-footer {
 		padding-right: 15px;
