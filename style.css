@@ -294,3 +294,15 @@ span.leerzeichen::before {
 .sfsi_wicons {
 	display: block;
 }
+
+/**** FOOTER ****/
+.footer-widget-area{
+	background-color: #305F05;
+	border: none;
+	border-radius: 20px 20px 0 0px;
+
+}
+
+.site-footer{
+	background-color: #305F05;
+}
