@@ -86,17 +86,10 @@ h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
 
 
 
-@media screen and (min-width: 1230px) {
-	.site-header,.site-main,.site-footer {
-		padding-right: 15px;
-		padding-left: 15px;
-		background-color: transparent;
-	}
-}
+
 
 .site-main {
 	float: none;
-	padding: 10px;
 	margin: 0 0 10px;
 	width: auto;
 	background-color: #fff;
@@ -112,7 +105,7 @@ h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
 }
 
 .hero > figure > img, .hero > img, .attachment-forefront-blog-thumbnail, .attachment-forefront-page-thumbnail, .attachment-forefront-grid-thumbnail {
-	border-radius: 1.2em;
+	/*border-radius: 1.2em;*/
 	margin: 0;
 }
 
