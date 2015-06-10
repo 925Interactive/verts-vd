@@ -22,7 +22,7 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="header-image-link">
+			<a href="<?php echo get_site_url(1) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="header-image-link">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/verts-vd-logo.svg" width="220px"  alt="" />
 				</a>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

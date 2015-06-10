@@ -52,6 +52,12 @@ body {
 border-radius: 5px;
 }
 
+.page .action-div{ width: 110%;
+  margin: auto -69px;
+  }
+.home .action-div{ width: 95%!important;
+	margin: auto!important;
+  }
 #action-weasy-opt-in-widget-2{    /** block Newsletter  **/
 	width: 50%;
 	float: left;
