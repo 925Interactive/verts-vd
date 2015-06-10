@@ -76,24 +76,20 @@ h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
 }
 
 /* Ajustement widget home pour affichage des derrnier postes*/
-#main .optional-widget-area{clear: none;width: 65%;}
-
-
-
-
-
-
-@media screen and (min-width: 1230px) {
-	.site-header,.site-main,.site-footer {
-		padding-right: 15px;
-		padding-left: 15px;
-		background-color: transparent;
-	}
+#main .optional-widget-area{
+	clear: none;
+	width: 65%;
 }
+
+
+
+
+
+
+
 
 .site-main {
 	float: none;
-	padding: 10px;
 	margin: 0 0 10px;
 	width: auto;
 	background-color: #fff;
@@ -109,7 +105,7 @@ h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
 }
 
 .hero > figure > img, .hero > img, .attachment-forefront-blog-thumbnail, .attachment-forefront-page-thumbnail, .attachment-forefront-grid-thumbnail {
-	border-radius: 1.2em;
+	/*border-radius: 1.2em;*/
 	margin: 0;
 }
 
@@ -120,7 +116,7 @@ img.attachment-forefront-page-thumbnail {
 /* Hintere Seiten ohne Titel-Bildli schmaler grüner Streifen unter Titel */
 
 .hero.without-featured-image {
-  border-bottom: 5px solid #718F2A;
+  /*border-bottom: 5px solid #718F2A;*/
 }
 
 /* Schräge Balken */
@@ -189,8 +185,7 @@ span.leerzeichen::before {
 #nav-global-box > ul > li > strong,
 #nav-global-box > ul > li.on > a,
 #nav-global-box > ul > li.current-menu-item > a,
-#nav-global-box > ul > li.trail > a,
-#nav-global-box > ul > li:first-child > a {
+#nav-global-box > ul > li.trail > a{
 	background-color: rgb(226,0,122);
 	padding: 4px;
 	color: white;
