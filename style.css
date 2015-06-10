@@ -42,14 +42,37 @@ body {
 }
 
 /** widget Acton = Faire un don | devenir membre  **/
-#action-w{
+.action-div{
 	width: 95%;
 	margin: auto;
 	background-color: #F7F9F7;
-	padding: 20px;
+	padding: 20px 20px 36px 20px;
 	-webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
+}
+
+h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
+  font-size: 12px;
+  text-transform: uppercase;
+  float: left;
+    line-height: 38px;
+  margin-right: 10px;
+}
+.fca_eoi_layout_0_email_field_wrapper{   /** Field email   **/
+ 
+  width: 260px!important;
+  float: left;
+}
+.fca_eoi_form_button_element{
+	
+	width: 50px!important;
+  float: left;
+}
+
+#action-weasy-opt-in-widget-2{
+	width: 70%;
+	float: left;
 }
 
 /* Ajustement widget home pour affichage des derrnier postes*/
@@ -57,6 +80,10 @@ border-radius: 5px;
 	clear: none;
 	width: 65%;
 }
+
+
+
+
 
 
 @media screen and (min-width: 1230px) {
@@ -258,6 +285,9 @@ span.leerzeichen::before {
 	font-size: 13px;
 }
 
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #E2007A;
+  }
 /**** FONTS  ****/
 
 			@font-face {

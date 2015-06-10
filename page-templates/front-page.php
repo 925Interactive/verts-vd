@@ -49,7 +49,7 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-	 <?php dynamic_sidebar( 'blockaction' ); //Sidebar pour dont contact et newsletter  ?> 
+	<div class="action-div"> <?php dynamic_sidebar( 'blockaction' ); //Sidebar pour dont contact et newsletter  ?> </div>
 	 <?php get_sidebar(); ?> 
 
 	<?php get_sidebar( 'front-page-one' ); ?>
