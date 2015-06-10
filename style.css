@@ -58,13 +58,19 @@ h3.fca_eoi_layout_0_headline_copy_wrapper {
   font-size: 12px;
   text-transform: uppercase;
   float: left;
+    line-height: 38px;
+  margin-right: 10px;
 }
-#fca_eoi_layout_0_email_field_wrapper{
+.fca_eoi_layout_0_email_field_wrapper{
  
   width: 65%!important;
   float: left;
 }
-
+.fca_eoi_form_button_element{
+	
+	width: 50px!important;
+  float: left;
+}
 
 
 /* Ajustement widget home pour affichage des derrnier postes*/
