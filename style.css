@@ -43,7 +43,7 @@ body {
 
 /** widget Acton = Faire un don | devenir membre  **/
 .action-div{
-	width: 95%;
+	width: 98%;
 	margin: auto;
 	background-color: #F7F9F7;
 	padding: 20px 20px 36px 20px;
@@ -184,7 +184,7 @@ span.leerzeichen::before {
 
 .widget-title, .sidebar-widget-area .widgettitle, .sidebar-widget-area .widget-title {
 	padding: .1em;
-	color: #84B414;
+	color: #E2007A;
 	/*background-color: #84B414;*/
 	display: inline-block;
 }
@@ -381,4 +381,22 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 .site-footer{
 	background-color: #305F05;
 	padding-top: 0px;
+}
+
+/**** MENU BLOG ****/
+
+div#action-wnav_menu-2 ul {
+  	padding: 0; 
+  	margin: 0;
+	text-align: center; 
+}
+
+div#action-wnav_menu-2 li{
+	display: inline;
+	list-style: none;
+	padding-right: 15px;
+}
+
+div#action-wnav_menu-2 {
+  margin-bottom: -13px;
 }

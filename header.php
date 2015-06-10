@@ -56,5 +56,14 @@
 		
 	</header><!-- #masthead -->
 	<div id="main" class="site-main">
+		<?php
+			if (is_front_page())
+			{?>
+			
+			<?php dynamic_sidebar( 'blockslider' ); //Sidebar slider  ?>
+			
+			<?php } else { ?>
+			
+			
+			<?php } ?>	
 		
-		<?php dynamic_sidebar( 'blockslider' ); //Sidebar slider  ?>
