@@ -33,7 +33,7 @@
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'forefront' ); ?></h1>
 
 			<a href="#content" class="screen-reader-text skip-link"><?php _e( 'Skip to content', 'forefront' ); ?></a>
-			 
+
 			<?php wp_nav_menu( array( 
 				'theme_location' => 'primary',
 				'menu'            => '',
@@ -53,8 +53,6 @@
 				'walker'          => '')) 
 			?>
 		</nav>
-		
 	</header><!-- #masthead -->
+
 	<div id="main" class="site-main">
-		
-		<?php dynamic_sidebar( 'blockslider' ); //Sidebar slider  ?>
