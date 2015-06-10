@@ -19,7 +19,7 @@
 
 
 
-/** vom individuellen CSS Konfigurator uebernommen **/
+/** colueur de fond et font **/
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -41,7 +41,9 @@ body {
 	position: relative;
 }
 
+
 /** widget Acton = Faire un don | devenir membre  **/
+
 .action-div{
 	width: 98%;
 	margin: auto;
@@ -83,6 +85,9 @@ h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
 	width: 50px!important;
   float: left;
 }
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #E2007A;
+  }
 
 
 .action-link{float: left; margin-right: 20px;} /** text faire un don ect  **/
@@ -129,11 +134,6 @@ h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
 	clear: none;
 	width: 65%;
 }
-
-
-
-
-
 
 
 
@@ -207,16 +207,14 @@ span.leerzeichen::before {
 	border-radius: .6em;
 }
 
-/*       MENU reposition */
-@media screen and (min-width: 930px) {
-	#site-navigation {
-		position: absolute;
-		right: 20px;
-		bottom: 0px;
-	}
+
+nav#site-navigation {
+  position: absolute;
+  right: 24px;
+  top: 127px;
 }
 
-/*      SUB MENU    TODO: FIX MENU STRUCTURE    */
+/*      SUB MENU       */
 #nav-global-box > ul > li > a,
 #nav-global-box > ul > li > strong {
 	text-transform: uppercase;
@@ -227,7 +225,7 @@ span.leerzeichen::before {
 	display: block;
 	-webkit-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
-/* neuer schatten unten müsste noch hinzugefügt werden...*/
+
 }
 
 #nav-global-box > ul > li > a:hover,
@@ -326,9 +324,10 @@ span.leerzeichen::before {
 	font-size: 13px;
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  background-color: #E2007A;
-  }
+
+
+
+  
 /**** FONTS  ****/
 
 			@font-face {
@@ -400,3 +399,26 @@ div#action-wnav_menu-2 li{
 div#action-wnav_menu-2 {
   margin-bottom: -13px;
 }
+
+
+
+
+/*  responsive adaptations */
+
+	
+@media(max-width:767px){
+	
+	.fca_eoi_layout_0_email_field_wrapper {width: 150px!important;}   /*  largeur du form newsletter */
+  
+  #action-weasy-opt-in-widget-2{width: 100%;}   /*  passage à 100% de la largeur sur mobile */
+
+}
+@media(min-width:768px){
+	}
+
+
+}
+@media(min-width:992px){
+	
+}
+@media(min-width:1200px){}

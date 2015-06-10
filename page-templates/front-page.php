@@ -28,13 +28,26 @@ get_header(); ?>
 				<div>
 					<div>
 						<div>
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-								<header class="entry-header">
-									<h1 class="page-title sanukot"><?php the_title(); ?></h1>
-								</header>
-								<!--<div class="slogan">-->
-								<!--<div class="title-bar-green"><span class="leerzeichen sanukot">Titel Green</span></div>-->
-								<!--<div class="title-bar-magenta"><span class="leerzeichen sanukot">Titel Magenta</span></div></div>-->
+							
+							
+
+								<?php
+								if ( is_main_site($blog_id) ) {
+								    // This is the blog posts index
+								    
+								} else {
+								    // This is not the blog posts index
+								    ?>
+								    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+																<header class="entry-header">
+																	<h1 class="page-title sanukot"><?php the_title(); ?></h1>
+																</header>
+								    
+								<?php }
+								?>
+
+							
+							
 								<div class="entry-content">
 									<?php the_content(); ?>
 								</div>

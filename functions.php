@@ -151,6 +151,17 @@ function my_theme_register_required_plugins() {
 
 }
 
+/**
+	 * This theme uses wp_nav_menu() in one location.
+	 */
+	register_nav_menus( array(
+		'primary' => __( 'Primary Menu', 'forefront' ),
+		'placeholder' => __( 'placeholder', 'verts' )
+	) );
+
+
+
+
     /**
  * Register widgetized area and update sidebar with default widgets
  */
