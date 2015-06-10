@@ -52,6 +52,14 @@ body {
 border-radius: 5px;
 }
 
+#action-weasy-opt-in-widget-2{    /** block Newsletter  **/
+	width: 50%;
+	float: left;
+	  position: relative;
+  top: -11px;
+  
+}
+
 h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
   font-size: 12px;
   text-transform: uppercase;
@@ -59,22 +67,57 @@ h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
     line-height: 38px;
   margin-right: 10px;
 }
-.fca_eoi_layout_0_email_field_wrapper{   /** Field email   **/
+.fca_eoi_layout_0_email_field_wrapper{   /** Field email  Newsletter **/
  
   width: 260px!important;
   float: left;
 }
-.fca_eoi_form_button_element{
+.fca_eoi_form_button_element{  /** bouton GO!  **/
 	
 	width: 50px!important;
   float: left;
 }
 
-#action-weasy-opt-in-widget-2{
-	width: 70%;
-	float: left;
-}
 
+.action-link{float: left; margin-right: 20px;} /** text faire un don ect  **/
+.action-wtext-2 a{color:#272626!important}      /** couleur lien text faire un don  **/
+.action-wtext-2 a:hover{color:#84B414!important}      /** couleur hover lien text faire un don  **/
+.action-wtext-2{  position: relative;                /** reglage pour l'oeil  **/
+  top: -2px;}
+
+.don-ico{                    /** Icon don  **/
+  float: left;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(img/don-ico.svg);
+  background-size: 35px 35px;
+  position: relative;
+  top:-7px;
+  margin-right: 5px;
+}
+.membre-ico{         /** Icon membre **/
+  float: left;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(img/membre-ico.svg);
+  background-size: 35px 35px;
+  position: relative;
+  top:-7px;
+  margin-right: 5px;
+}
+.contact-ico{           /** Icon contact **/
+  float: left;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(img/contact-ico.svg);
+  background-size: 35px 35px;
+  position: relative;
+  top:-7px;
+  margin-right: 5px;
+}
 /* Ajustement widget home pour affichage des derrnier postes*/
 #main .optional-widget-area{
 	clear: none;
