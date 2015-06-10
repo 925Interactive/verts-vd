@@ -51,9 +51,28 @@ body {
 -moz-border-radius: 5px;
 border-radius: 5px;
 }
+.fca_eoi_form_wrapper.fca_eoi_layout_widget_wrapper.fca_eoi_layout_0_wrapper {
+  width: 60%;
+}
+h3.fca_eoi_layout_0_headline_copy_wrapper {
+  font-size: 12px;
+  text-transform: uppercase;
+  float: left;
+}
+#fca_eoi_layout_0_email_field_wrapper{
+ 
+  width: 65%!important;
+  float: left;
+}
+
+
 
 /* Ajustement widget home pour affichage des derrnier postes*/
 #main .optional-widget-area{clear: none;width: 65%;}
+
+
+
+
 
 
 @media screen and (min-width: 1230px) {
