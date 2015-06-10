@@ -158,7 +158,7 @@ function my_theme_register_required_plugins() {
 	register_sidebar( array(
 		'name'          => __( 'block-action', 'forefront' ),
 		'id'            => 'blockaction',
-		'before_widget' => '<div id="action-w" class="action-w">',
+		'before_widget' => '<div id="action-w%1$s" class="action-w%1$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h1 class="">',
 		'after_title'   => '</h1>',
