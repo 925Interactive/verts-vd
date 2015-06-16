@@ -12,8 +12,17 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="hero <?php echo forefront_additional_class(); ?>">
-				<?php if ( '' != get_the_post_thumbnail() ) : ?>
+			
+				<?php
+								if ( is_main_site($blog_id) ) {
+								    // This is the blog posts index
+								    
+								} else {
+								    // This is not the blog posts index
+								    ?>
+								    
+			<div class="hero <?php echo forefront_additional_class(); ?>">					    
+								   <?php if ( '' != get_the_post_thumbnail() ) : ?>
 				<figure>
 					<?php the_post_thumbnail( 'forefront-page-thumbnail' ); ?>
 					<div>
@@ -24,31 +33,14 @@ get_header(); ?>
 						</div>
 					</div>
 				</figure>
+			
 				<?php endif; ?>
-				<div>
-					<div>
-						<div>
-							
-							
-
-								<?php
-								if ( is_main_site($blog_id) ) {
-								    // This is the blog posts index
-								    
-								} else {
-								    // This is not the blog posts index
-								    ?>
-								    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div><div><div>
+					 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 																<header class="entry-header">
 																	<h1 class="page-title sanukot"><?php the_title(); ?></h1>
 																</header>
-								    
-								<?php }
-								?>
-
-							
-							
-								<div class="entry-content">
+					<div class="entry-content">
 									<?php the_content(); ?>
 								</div>
 								<?php edit_post_link( __( 'Edit', 'forefront' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
@@ -58,6 +50,21 @@ get_header(); ?>
 				</div>
 			</div>
 
+
+								    
+								<?php }
+								?>
+				
+								
+					
+						
+							
+							
+
+								
+							
+							
+								
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
