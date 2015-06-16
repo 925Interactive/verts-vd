@@ -194,3 +194,149 @@ function my_theme_register_required_plugins() {
 		'after_title'   => '</h1>',
 	) );
 
+
+/** Fonction ajoutée de l'ancien site **/
+/**
+ * Allows a non super-admin user to manage other users in his own sub-blog
+ */
+function mc_admin_users_caps( $caps, $cap, $user_id, $args ){
+ 
+    foreach( $caps as $key => $capability ){
+ 
+        if( $capability != 'do_not_allow' )
+            continue;
+ 
+        switch( $cap ) {
+            case 'edit_user':
+            case 'edit_users':
+                $caps[$key] = 'edit_users';
+                break;
+            case 'delete_user':
+            case 'delete_users':
+                $caps[$key] = 'delete_users';
+                break;
+            case 'create_users':
+                $caps[$key] = $cap;
+                break;
+        }
+    }
+ 
+    return $caps;
+}
+add_filter( 'map_meta_cap', 'mc_admin_users_caps', 1, 4 );
+remove_all_filters( 'enable_edit_any_user_configuration' );
+add_filter( 'enable_edit_any_user_configuration', '__return_true');
+ 
+/**
+ * Checks that both the editing user and the user being edited are
+ * members of the blog and prevents the super admin being edited.
+ */
+function mc_edit_permission_check() {
+    global $current_user, $profileuser;
+ 
+    $screen = get_current_screen();
+ 
+    get_currentuserinfo();
+ 
+    if( ! is_super_admin( $current_user->ID ) && in_array( $screen->base, array( 'user-edit', 'user-edit-network' ) ) ) { // editing a user profile
+
+        if ( is_super_admin( $profileuser->ID ) ) { // trying to edit a superadmin while less than a superadmin
+            wp_die( __( 'You do not have permission to edit this user.' ) );
+        } elseif ( ! ( is_user_member_of_blog( $profileuser->ID, get_current_blog_id() ) && is_user_member_of_blog( $current_user->ID, get_current_blog_id() ) )) { // editing user and edited user aren't members of the same blog
+            wp_die( __( 'You do not have permission to edit this user.' ) );
+        }
+    }
+ 
+}
+add_filter( 'admin_head', 'mc_edit_permission_check', 1, 4 );
+
+/**
+ * Displays the needed social networks and contact methods
+ */
+function my_new_contactmethods( $contactmethods ) {
+    // Add Twitter
+    $contactmethods['twitter'] = 'Twitter';
+    //add Facebook
+    $contactmethods['facebook'] = 'Facebook';
+    $contactmethods['telephone'] = 'Telephone';
+    $contactmethods['adresse'] = 'Adresse';
+    $contactmethods['npa_ville'] = 'NPA et Localité';
+
+
+    unset($contactmethods['aim']);
+    unset($contactmethods['yim']);
+    unset($contactmethods['googleplus']);
+    unset($contactmethods['jabber']);
+    return $contactmethods;
+}
+add_filter('user_contactmethods','my_new_contactmethods',10,1);
+
+
+/**
+ * Add an extra checkbox in the user profile form so that the admin can decide when the member appears in front end
+ */
+function my_show_extra_profile_fields( $user ) { ?>
+<h3>Membres</h3>
+    <table class="form-table">
+<tr>
+	    <th><label for="membre">Inclure cet utilisateur de la liste des membres</label></th>
+	    <td>
+	    <input type="checkbox" name="membre" id="membre" value="yes" <?php if (esc_attr( get_the_author_meta( 'membre', $user->ID ) ) == 'yes') { echo 'checked'; } ?> class="checkbox double" /><br />
+		<span class="description">Cocher si cet utilisateur doit s'afficher publiquement dans la liste des membres.</span>
+	    </td>
+</tr>
+</table>
+<?php }
+add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
+add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
+
+
+/**
+ * Tell the system to save whether or not the user has to appear in front end as a member
+ */
+function my_save_extra_profile_fields( $user_id ) {
+
+    if ( !current_user_can( 'edit_user', $user_id ) )
+	return false;
+
+    if (isset($_POST['membre'])) {	
+	update_user_meta( $user_id, 'membre', $_POST['membre'] );
+    } else {
+	update_user_meta( $user_id, 'membre', 0);
+    }
+}
+add_action( 'personal_options_update', 'my_save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'my_save_extra_profile_fields' );
+
+/**
+ * Rewrite rule to access a given user with mysite.com/membres/username
+ */
+function verts_rewrite_rules( $wp_rewrite )
+{
+    $new_rules = array();
+    
+    $new_rules['membres/(.+?)/?$'] = 'index.php?author_name='.$wp_rewrite->preg_index(1);
+    
+    //​ Add the new rewrite rule into the top of the global rules array
+    $wp_rewrite->rules = $new_rules  + $wp_rewrite->rules ;
+    return $wp_rewrite->rules;
+}
+add_action('generate_rewrite_rules', 'verts_rewrite_rules'); 
+
+/**
+ * Build an array of users alphabetically sorted
+ */
+function verts_get_members() {
+    global $wpdb;
+    $allusers = $wpdb->get_results("SELECT u.ID, u.display_name FROM $wpdb->users u, $wpdb->usermeta m WHERE u.ID =m.user_id AND m.meta_key='membre' and m.meta_value='yes'");
+    foreach ( $allusers as $u ) {
+
+	$lastname = get_the_author_meta('last_name', $u->ID);
+	$firstname = get_the_author_meta('first_name', $u->ID);
+	$user_keyname = $lastname.' '.$firstname;
+	$users_alphabet[substr($user_keyname, 0, 1)][$user_keyname] = $u->ID;
+    }
+
+    ksort($users_alphabet);
+    return $users_alphabet;
+}

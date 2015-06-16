@@ -1,8 +1,10 @@
 <?php
 /**
- * Template Name: Front Page
+ * Template Name: Front Page 
  *
  * @package Forefront
+ 
+ * Utilisé pour l'affichages des pages d'acceuil > site principal , blogues, sections
  */
 
 get_header(); ?>
@@ -15,10 +17,11 @@ get_header(); ?>
 			
 				<?php
 								if ( is_main_site($blog_id) ) {
-								    // This is the blog posts index
-								    
+								    // Si vous êtes sur le site principal Le Slider
+								   
+								dynamic_sidebar( 'blockslider' ); //Sidebar slider 
 								} else {
-								    // This is not the blog posts index
+								    // Si vous êtes sur les autres sites une Images et un titre
 								    ?>
 								    
 			<div class="hero <?php echo forefront_additional_class(); ?>">					    

@@ -42,6 +42,22 @@ body {
 }
 
 
+/* Surcharge du CSS du slider  */
+
+.site-main{border-top:none;}
+
+div.pointelle-active {
+	display: block;
+  background: url(img/arrow-slider.svg) no-repeat center left!important;
+  background-size: 379px 144px!important;
+  margin-left: -22px!important;
+  
+ 
+ }
+ 
+ .pointelle-active h2, .pointelle-active .pointelle-meta1, .pointelle-active .pointelle-meta2 {color: #FFF!important;}
+
+
 /** widget Acton = Faire un don | devenir membre  **/
 
 .action-div{
@@ -57,7 +73,7 @@ border-radius: 5px;
 .page .action-div{ width: 110%;
   margin: auto -69px;
   }
-.home .action-div{ width: 95%!important;
+.home .action-div{ width: 100%!important;
 	margin: auto!important;
   }
 #action-weasy-opt-in-widget-2{    /** block Newsletter  **/
@@ -107,7 +123,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   top:-7px;
   margin-right: 5px;
 }
-.membre-ico{         /** Icon membre **/
+.membre-ico{         /** Icon devenir membre **/
   float: left;
   display: block;
   width: 35px;

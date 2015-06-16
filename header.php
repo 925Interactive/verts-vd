@@ -60,7 +60,7 @@
 			if (is_front_page())
 			{?>
 			
-			<?php dynamic_sidebar( 'blockslider' ); //Sidebar slider  ?>
+			
 			
 			<?php } else { ?>
 			
