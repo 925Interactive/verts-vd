@@ -56,14 +56,4 @@
 		
 	</header><!-- #masthead -->
 	<div id="main" class="site-main">
-		<?php
-			if (is_front_page())
-			{?>
-			
-			
-			
-			<?php } else { ?>
-			
-			
-			<?php } ?>	
 		

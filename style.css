@@ -37,10 +37,15 @@ body {
 	background-color: transparent;
 }
 
-#masthead.site-header {
+#masthead.site-header, .content-area {
 	position: relative;
 }
 
+/*  titre du site masquer*/
+
+.site-title, .site-description{position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+}
 
 /* Surcharge du CSS du slider  */
 
@@ -57,6 +62,27 @@ div.pointelle-active {
  
  .pointelle-active h2, .pointelle-active .pointelle-meta1, .pointelle-active .pointelle-meta2 {color: #FFF!important;}
 
+/* breadcrumbs  */
+#breadcrumbs{
+    list-style:none;
+    margin:10px 0;
+    overflow:hidden;
+    position: absolute;
+    top: -27px;
+  left: -60px;
+}
+  
+#breadcrumbs li{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:15px;
+}
+  
+#breadcrumbs .separator{
+    font-size:18px;
+    font-weight:100;
+    color:#ccc;
+}
 
 /** widget Acton = Faire un don | devenir membre  **/
 
@@ -341,8 +367,62 @@ nav#site-navigation {
 }
 
 
+/**** MENU BLOG ****/
+
+div#action-wnav_menu-2{position: relative;}
+
+div#action-wnav_menu-2 ul {
+  	padding: 0; 
+  	margin: 0;
+	text-align: center; 
+}
+
+div#action-wnav_menu-2 li{
+	position: relative;
+	display: inline;
+	list-style: none;
+	padding-right: 15px;
+	
+}
+
+div#action-wnav_menu-2 {
+  margin-bottom: -13px;
+}
 
 
+/*      SUB MENU       */
+
+.action-wnav_menu-2 .sub-menu{display: none;
+   position: absolute;
+   left:0;
+   text-align: left!important;
+   margin:0;
+   width: 600px;
+   
+   }
+/*make the menu sub-menu items drop down on mouse hover */
+.action-wnav_menu-2 .menu-item-has-children:hover >.sub-menu {
+    display: block;
+       margin: 0;
+   
+}
+div#action-wnav_menu-2 .sub-menu li{
+
+display: list-item;}
+.sub-menu li a {
+padding: 5px;
+	
+	}
+.sub-menu li a {
+
+	background-color: #F7F9F7;
+	}
+.sub-menu li a:hover {
+
+	background-color: #E2007A;
+	color: #FFF;}
+
+	
   
 /**** FONTS  ****/
 
@@ -382,7 +462,14 @@ nav#site-navigation {
 
 .sfsi_wicons {
 	display: block;
+	width: 40px!important;
+  height: 40px!important;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  z-index: 0;
 }
+
+
 
 /**** FOOTER ****/
 .footer-widget-area{
@@ -398,23 +485,6 @@ nav#site-navigation {
 	padding-top: 0px;
 }
 
-/**** MENU BLOG ****/
-
-div#action-wnav_menu-2 ul {
-  	padding: 0; 
-  	margin: 0;
-	text-align: center; 
-}
-
-div#action-wnav_menu-2 li{
-	display: inline;
-	list-style: none;
-	padding-right: 15px;
-}
-
-div#action-wnav_menu-2 {
-  margin-bottom: -13px;
-}
 
 
 

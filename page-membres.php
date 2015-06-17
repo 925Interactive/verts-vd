@@ -35,6 +35,7 @@ get_header(); ?>
 	<?php rewind_posts(); ?>
 
 	<div id="primary" class="content-area">
+		<?php the_breadcrumb(); ?>
 		<div id="content" class="site-content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
