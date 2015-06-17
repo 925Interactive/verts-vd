@@ -409,15 +409,15 @@ div#action-wnav_menu-2 {
 div#action-wnav_menu-2 .sub-menu li{
 
 display: list-item;}
-.sub-menu li a {
+.action-wnav_menu-2 .sub-menu li a {
 padding: 5px;
 	
 	}
-.sub-menu li a {
+.action-wnav_menu-2 .sub-menu li a {
 
 	background-color: #F7F9F7;
 	}
-.sub-menu li a:hover {
+..action-wnav_menu-2 .sub-menu li a:hover {
 
 	background-color: #E2007A;
 	color: #FFF;}
