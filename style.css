@@ -521,7 +521,7 @@ a.read-more{ color: #E2007A}
 
 
 
-/***  Calendrier sidebare  ***/
+/***  Calendrier sidebar  ***/
 
 table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
   color: #E2007A;
@@ -530,6 +530,16 @@ table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
 
 
 /*  responsive adaptations */
+
+div#rm-additional-content{
+  background: #FFF;
+}
+
+div#rm-additional-content #homeV {
+	  background: #FFF!important;
+	  border: none!important;
+	  color: #E2007A!important;
+}
 
 	
 @media(max-width:767px){
