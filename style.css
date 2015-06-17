@@ -446,6 +446,17 @@ padding: 5px;
 					font-family: 'SanukOT-Bold' !important;
 				}
 				
+/*   Front page  */
+
+.post-time{ color: #a7a7a7}
+
+a.read-more{ color: #E2007A}
+
+
+	
+	
+	
+	
 				
 /**** SOCIAL MEDIA ****/
 
@@ -486,6 +497,11 @@ padding: 5px;
 }
 
 
+/***  Calendrier sidebare  ***/
+
+table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
+  color: #E2007A;
+}
 
 
 

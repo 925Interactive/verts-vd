@@ -20,7 +20,7 @@ get_header(); ?>
 			if ( '' != get_the_post_thumbnail() )
 				the_post_thumbnail( 'forefront-page-thumbnail' );
 		else {
-echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/sunflowers.jpg" />';
+echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
 } ?>
 					<div>
 						<div>
