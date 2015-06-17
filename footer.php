@@ -31,6 +31,19 @@
 		<a href="<?php echo network_home_url(); ?>medias/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/medias.svg" width="300px"/></a>
 	</div>
 	
+	<div class="colonne3">
+		<div class="menu-footer">
+					<p>
+						 <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cal-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>events/ "> Calendrier </a>
+                        <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>medias/ "> Contact </a>
+										 <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/membre-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>events/ "> Devenir Membre </a>
+                        <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/don-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>medias/ "> Faire un don </a>
+						
+					</p>
+				</div>
+
+	</div>
+	
 	<footer id="colophon" class="site-footer clear" role="contentinfo">
 		<div class="site-info">
 			©<?php echo date('Y');?> Les Verts Vaudois			
@@ -38,6 +51,7 @@
 
 			
 	</footer><!-- #colophon -->
+	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

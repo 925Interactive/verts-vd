@@ -491,4 +491,8 @@ function the_breadcrumb () {
      
 }
  
-
+add_filter('get_search_form', 'new_search_button');
+function new_search_button($text) {
+$text = str_replace('value="Rechercher"', 'value="GO!"', $text);
+return $text;
+}

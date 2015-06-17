@@ -453,6 +453,10 @@ padding: 5px;
 a.read-more{ color: #E2007A}
 
 
+.featured-post{
+	padding-bottom: 20px;
+	border-bottom: #84b414 dotted 1px;
+}
 	
 	
 	
@@ -501,23 +505,54 @@ a.read-more{ color: #E2007A}
 	color: white;
 }
 
-.colonne2{
-	float: right;
-    width: 50%;
-}
+
+
 
 .colonne1{
+	display: block;
+	float:left;
+	margin: 1px 0px;
 	float: left;
-    width: 50%;
+    width: width: 32.2%;
     text-align: left;
     color: white;
 }
-
 .adresse{
 	margin-left: 30px;
 	margin-top: -40px;
 
 }
+
+.colonne2{
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+    width: 32.2%;
+    text-align:right;
+}
+.colonne2 a > img{ width: 305px;
+	-webkit-transition-delay: .1s; /* Safari */
+    transition-delay: .1s;
+    
+}
+.colonne2 a:hover > img{ width: 305px;
+	-webkit-transition-delay: .1s; /* Safari */
+    transition-delay: .1s;
+    -ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Safari */
+    transform: rotate(2deg);
+}
+.colonne3{
+	display: block;
+	float:left;
+	margin: 1% 0 1% 12.6%;
+    width: 25.6%;
+    text-align: right;
+}
+.colonne3 p{text-align: left;}
+.colonne3 a{ color: #FFF;}
+.colonne3 a:hover{ color: #E2007A;}
+
 
 
 
@@ -547,6 +582,11 @@ div#rm-additional-content #homeV {
 	.fca_eoi_layout_0_email_field_wrapper {width: 150px!important;}   /*  largeur du form newsletter */
   
   #action-weasy-opt-in-widget-2{width: 100%;}   /*  passage à 100% de la largeur sur mobile */
+  
+  /*  largeur des colonnes du footer */
+  .colonne1,{width: 100%; }
+  .colonne2{ width: 100%; text-align: center;}
+  .colonne3{width: 100%; margin: 1% 0 1% 1.6%; }
 
 }
 @media(min-width:768px){
@@ -585,9 +625,3 @@ div#search {
 	}
 }
 
-/***  Articles sur la page d'accueil  ***/
-
-.featured-post{
-	padding-bottom: 20px;
-	border-bottom: #84b414 solid 1px;
-}
