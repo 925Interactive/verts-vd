@@ -484,17 +484,41 @@ a.read-more{ color: #E2007A}
 
 /**** FOOTER ****/
 .footer-widget-area{
-	background-color: #305F05;
+	background-color: transparent;
 	border: none;
 	border-radius: 20px 20px 0 0px;
 	padding: 30px 0 0 0;
+	
 
 }
 
 .site-footer{
-	background-color: #305F05;
+	background-color: transparent;
 	padding-top: 0px;
 }
+
+.site-info, .site-info a{
+	color: white;
+}
+
+.colonne2{
+	float: right;
+    width: 50%;
+}
+
+.colonne1{
+	float: left;
+    width: 50%;
+    text-align: left;
+    color: white;
+}
+
+.adresse{
+	margin-left: 30px;
+	margin-top: -40px;
+
+}
+
 
 
 /***  Calendrier sidebare  ***/
@@ -523,4 +547,12 @@ table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
 @media(min-width:992px){
 	
 }
-@media(min-width:1200px){}
+@media(min-width:1200px){
+	.site-footer {
+  padding-left: 30px;
+}
+}
+
+
+
+
