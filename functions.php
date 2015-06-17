@@ -193,6 +193,15 @@ function my_theme_register_required_plugins() {
 		'before_title'  => '<h1 class="">',
 		'after_title'   => '</h1>',
 	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'block-search', 'forefront' ),
+		'id'            => 'blocksearch',
+		'before_widget' => '<div id="search" class="">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h1 class="">',
+		'after_title'   => '</h1>',
+	) );
 
 
 /** Fonction ajoutée de l'ancien site **/

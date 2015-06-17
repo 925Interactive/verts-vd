@@ -84,7 +84,7 @@ div.pointelle-active {
     color:#ccc;
 }
 
-/** widget Acton = Faire un don | devenir membre  **/
+/** widget Action = Faire un don | devenir membre  **/
 
 .action-div{
 	width: 98%;
@@ -553,6 +553,31 @@ table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
 }
 }
 
+/***  Pages  ***/
 
+.page-title {
+	color: #fff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  
+}
 
+/***  Recherche  ***/
 
+div#search {
+  float: right;
+}
+
+/***  Menu principal  ***/
+
+@media screen and (min-width: 1110px){
+	.navigation-main {
+	  max-width: 1100px;
+	}
+}
+
+/***  Articles sur la page d'accueil  ***/
+
+.featured-post{
+	padding-bottom: 20px;
+	border-bottom: #84b414 solid 1px;
+}
