@@ -28,7 +28,7 @@
 	
 	
 	<div class="colonne2">
-		<a href="<?php echo get_stylesheet_directory_uri(); ?>/medias/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/medias.svg" width="300px"/></a>
+		<a href="<?php echo network_home_url(); ?>medias/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/medias.svg" width="300px"/></a>
 	</div>
 	
 	<footer id="colophon" class="site-footer clear" role="contentinfo">
