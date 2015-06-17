@@ -207,7 +207,7 @@ img.attachment-forefront-page-thumbnail {
 /* Hintere Seiten ohne Titel-Bildli schmaler grüner Streifen unter Titel */
 
 .hero.without-featured-image {
-  /*border-bottom: 5px solid #718F2A;*/
+  border-bottom: none;
 }
 
 /* Schräge Balken */

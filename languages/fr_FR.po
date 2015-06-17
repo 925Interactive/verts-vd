@@ -1,0 +1,393 @@
+# Copyright (C) 2014 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Forefront 1.1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/forefront\n"
+"POT-Creation-Date: 2015-06-17 09:52+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-06-17 15:50+0100\n"
+"Last-Translator: 6clicks <6clicks@gmail.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oups! Cette page est introuvable."
+
+#: 404.php:27
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Il semble qu’il n’y a rien à cet endroit. Vous pouvez essayer l’un des liens ci-dessous ou effectuer une recherche.\n"
+
+#: 404.php:36
+msgid "Most Used Categories"
+msgstr "Catégories les plus utilisées"
+
+#. translators: %1$s: smiley
+#: 404.php:53
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Chercher dans les archives mensuelles. %1$s"
+
+#: archive-jetpack-testimonial.php:34
+msgid "Testimonials"
+msgstr "Témoignages"
+
+#: archive-jetpack-testimonial.php:68
+msgid "Sorry, but no testimonial has been added yet."
+msgstr "Désolé, mais aucun témoignages n’a été ajouté pour le moment."
+
+#: archive.php:26
+msgid "Author: %s"
+msgstr "Auteur: %s"
+
+#: archive.php:29
+msgid "Day: %s"
+msgstr "Jour: %s"
+
+#: archive.php:32
+msgid "Month: %s"
+msgstr "Mois: %s"
+
+#: archive.php:32
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:35
+msgid "Year: %s"
+msgstr "Année: %s"
+
+#: archive.php:35
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:38
+msgid "Asides"
+msgstr "A côté"
+
+#: archive.php:41
+msgid "Images"
+msgstr "Images"
+
+#: archive.php:44
+msgid "Videos"
+msgstr "Vidéos"
+
+#: archive.php:47
+msgid "Quotes"
+msgstr "Citations"
+
+#: archive.php:50
+msgid "Links"
+msgstr "Liens"
+
+#: archive.php:53
+msgid "Galleries"
+msgstr "Galeries"
+
+#: archive.php:56
+msgid "Audio"
+msgstr "Audio"
+
+#: archive.php:59
+msgid "Statuses"
+msgstr "Statuts"
+
+#: archive.php:62
+msgid "Chats"
+msgstr "Chats"
+
+#: archive.php:65
+#: sidebar.php:17
+msgid "Archives"
+msgstr "Archives"
+
+#: archive.php:69
+msgid "Oops! Nothing Found."
+msgstr "Oups! Rien n’a été trouvé."
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Une réflexion sur &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s réflexions sur &ldquo;%2$s&rdquo;"
+
+#: comments.php:36
+#: comments.php:56
+msgid "Comment navigation"
+msgstr "Navigation dans les commentaires"
+
+#: comments.php:37
+#: comments.php:57
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Commentaires plus anciens"
+
+#: comments.php:38
+#: comments.php:58
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nouveaux commentaires <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: content-grid.php:19
+#: content-page.php:21
+#: content-testimonial.php:23
+#: content.php:49
+#: image.php:29
+#: inc/template-tags.php:76
+#: inc/template-tags.php:108
+#: page-templates/front-page.php:38
+msgid "Edit"
+msgstr "Editer"
+
+#: content-none.php:15
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Prêt à publier votre premier article? <a href=\"%1$s\">Commencez ici</a>."
+
+#: content-none.php:19
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Désolé, mais rien ne correspond à vos termes de recherche. Veuillez essayer de nouveau avec d’autres mots clés."
+
+#: content-none.php:24
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Il semble que nous ne trouvons pas ce que vous recherchez. Peut-être que le formulaire de recherche peut vous aider."
+
+#: content-page.php:14
+#: content.php:69
+#: image.php:85
+msgid "Pages:"
+msgstr "Pages:"
+
+#: content.php:22
+#: content.php:79
+msgid ", "
+msgstr ", "
+
+#: content.php:40
+msgid "All %s posts"
+msgstr "Tous les articles"
+
+#: content.php:52
+msgid "Leave a comment"
+msgstr "Laisser un commentaire"
+
+#: content.php:52
+msgid "1 Comment"
+msgstr "1 commentaires"
+
+#: content.php:52
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: content.php:65
+#: functions.php:276
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lire plus <span class=\"meta-nav\">&rarr;</span>"
+
+#: footer.php:17
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Une plate-forme sémantique de publication personnelle."
+
+#: footer.php:17
+msgid "Proudly powered by %s"
+msgstr "Fièrement propulsé par %s"
+
+#: footer.php:19
+msgid "Theme: %1$s by %2$s."
+msgstr "Thème: %1$s par %2$s."
+
+#: functions.php:85
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: functions.php:116
+msgid "Sidebar"
+msgstr "Barre latérale"
+
+#: functions.php:125
+msgid "Footer Widget Area"
+msgstr "Widget du pied de page"
+
+#: functions.php:134
+msgid "Front Page Widget Area One"
+msgstr "Widget 1 de la page d’accueil"
+
+#: functions.php:143
+msgid "Front Page Widget Area Two"
+msgstr "Widget 2 de la page d’accueil"
+
+#. translators: If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:194
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#. translators: To add an additional Open Sans character subset specific to
+#. your language, translate
+#. this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate into your
+#. own language.
+#: functions.php:199
+msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: header.php:36
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:38
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: image.php:96
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Poster un commentaire</a> ou laisser un lien en retour: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Lien</a>."
+
+#: image.php:98
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Les commentaires sont fermés mais vous pouvez laisser un lien en retour: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Lien</a>."
+
+#: image.php:100
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Les liens en retour sont fermés, mais vous pouvez <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">poster un commentaire</a>."
+
+#: image.php:102
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Les commentaires et le liens en retour sont fermés."
+
+#: image.php:108
+msgid "Previous"
+msgstr "Précédent"
+
+#: image.php:109
+msgid "Next"
+msgstr "Suivant"
+
+#: inc/customizer.php:18
+msgid "Site Title"
+msgstr "Titre du site"
+
+#: inc/customizer.php:24
+msgid "Display Site Title"
+msgstr "Afficher le titre du site"
+
+#: inc/customizer.php:27
+msgid "Site Title Color"
+msgstr "Couleur du titre du site"
+
+#: inc/extras.php:66
+msgid "Page %s"
+msgstr "Page %s"
+
+#: inc/template-tags.php:34
+msgid "Post navigation"
+msgstr "Navigation des articles"
+
+#: inc/template-tags.php:38
+msgid "<span class=\"meta-nav\">Previous testimonial</span>"
+msgstr "<span class=\"meta-nav\">Témoignage précédent</span>"
+
+#: inc/template-tags.php:39
+msgid "Next testimonial"
+msgstr "Témoignage suivant"
+
+#: inc/template-tags.php:42
+msgid "<span class=\"meta-nav\">View the post</span>"
+msgstr "<span class=\"meta-nav\">Voir l’article</span>"
+
+#: inc/template-tags.php:45
+msgid "<span class=\"meta-nav\">Previous post</span>"
+msgstr "<span class=\"meta-nav\">Article précédent</span>"
+
+#: inc/template-tags.php:46
+msgid "Next post"
+msgstr "Article suivant"
+
+#: inc/template-tags.php:51
+msgid "Older posts"
+msgstr "Anciens articles"
+
+#: inc/template-tags.php:56
+msgid "Newer posts"
+msgstr "Nouveaux articles"
+
+#: inc/template-tags.php:76
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:90
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: inc/template-tags.php:97
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s à %2$s"
+
+#: inc/template-tags.php:123
+msgid "<span class=\"sticky-post\">Sticky</span><span class=\"byline\"><span class=\"author vcard\"><a class=\"url fn n\" href=\"%1$s\" title=\"%2$s\" rel=\"author\">%3$s</a></span></span>"
+msgstr ""
+
+#: inc/template-tags.php:125
+#: inc/template-tags.php:135
+msgid "View all posts by %s"
+msgstr "Voir tous les articles de %s"
+
+#: inc/template-tags.php:129
+msgid "<span class=\"entry-date\"><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a></span> <span class=\"byline\"><span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour: %s"
+
+#: search.php:19
+msgid "Nothing Found"
+msgstr "Rien n’a été trouvé"
+
+#: sidebar.php:24
+msgid "Meta"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Forefront"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://forefronttheme.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Forefront is a responsive business and corporate theme that helps you to create a strong–yet beautiful–online presence for your business."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://theme.wordpress.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page"
+msgstr "Page de garde"
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Grid Page"
+msgstr ""
+
