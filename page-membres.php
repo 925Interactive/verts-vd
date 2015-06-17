@@ -15,18 +15,23 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-	<div class="hero <?php echo forefront_additional_class(); ?>">
-		<?php
+		<div class="hero <?php echo forefront_additional_class(); ?>">
+<figure>
+					<?php
 			if ( '' != get_the_post_thumbnail() )
 				the_post_thumbnail( 'forefront-page-thumbnail' );
-		?>
-		<div>
-			<div>
-				<div>
-					<h1 class="page-title"><?php the_title(); ?></h1>
-				</div>
-			</div>
-		</div>
+		else {
+echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
+} ?>
+					<div>
+						<div>
+							<div>
+								<h1 class="page-title"><?php the_title(); ?></h1>
+							</div>
+						</div>
+					</div>
+				</figure>
+
 	</div>
 	<div class="action-div"> <?php dynamic_sidebar( 'blockaction' ); //Sidebar pour dont contact et newsletter  ?> </div>
 
