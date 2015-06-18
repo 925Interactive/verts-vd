@@ -639,6 +639,16 @@ div#rm-additional-content #homeV {
 
 }
 @media(min-width:992px){
+	.navigation-main {
+	max-width: 757px;
+	}
+}
+	
+@media screen and (min-width: 930px) {
+	.navigation-main {
+	max-width: 757px !important;
+	}	
+}
 	
 }
 @media(min-width:1200px){
