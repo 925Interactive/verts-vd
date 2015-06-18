@@ -96,8 +96,9 @@ div.pointelle-active {
 border-radius: 5px;
 }
 
-.page .action-div{ width: 110%;
-  margin: auto -69px;
+.page .action-div{ 
+	width: 100%;
+	margin: auto !important;
   }
 .home .action-div{ width: 100%!important;
 	margin: auto!important;
@@ -108,6 +109,17 @@ border-radius: 5px;
 	  position: relative;
   top: -11px;
   
+}
+
+.page .site-main{ 
+	padding: 5px;
+  }
+  
+  
+.content-area {
+  padding-top: 70px;
+  width: 100%;
+  margin-left: 60px;
 }
 
 h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
@@ -389,6 +401,16 @@ div#action-wnav_menu-2 {
   margin-bottom: -13px;
 }
 
+a, a:active {
+  color: #13b813;
+  text-decoration: none;
+}
+
+a, a:visited {
+  color: #848984;
+  text-decoration: none;
+}
+
 
 /*      SUB MENU       */
 
@@ -587,6 +609,28 @@ div#rm-additional-content #homeV {
   .colonne1,{width: 100%; }
   .colonne2{ width: 100%; text-align: center;}
   .colonne3{width: 100%; margin: 1% 0 1% 1.6%; }
+  
+  .page-title{
+	  font-size: 18px;
+  }
+  
+  .fca_eoi_layout_0_headline_copy_wrapper {
+	  margin-right: 1px !important;
+	}	
+	
+
+	
+	.has-post-thumbnail {
+	  padding-top: 105px;
+	  width: 95%;
+	  margin-left: 4px;
+	}
+	
+	.content-area {
+	  padding-top: 0px;
+	  width: 95%;
+	  margin-left: 4px;
+	}
 
 }
 @media(min-width:768px){
@@ -625,3 +669,30 @@ div#search {
 	}
 }
 
+.navigation-main ul ul {
+  background-color: #fff;
+  float: left;
+  position: absolute;
+  top: 44px;
+  left: -999em;
+  z-index: 99999;
+}
+
+.navigation-main ul ul a {
+  color: #848984;
+}
+
+.navigation-main ul ul a:hover, .navigation-main ul ul a:focus, .navigation-main li li.current_page_item > a, .navigation-main li li.current-menu-item > a {
+  background-color: #E2007A;
+  color: #fff;
+}
+
+/***  Listes  ***/
+
+ol, ul {
+  list-style: circle;
+}
+
+ul li a {
+	color: #848984;
+}
