@@ -606,19 +606,31 @@ div#rm-additional-content #homeV {
   #action-weasy-opt-in-widget-2{width: 100%;}   /*  passage à 100% de la largeur sur mobile */
   
   /*  largeur des colonnes du footer */
-  .colonne1,{width: 100%; }
-  .colonne2{ width: 100%; text-align: center;}
-  .colonne3{width: 100%; margin: 1% 0 1% 1.6%; }
-  
-  .page-title{
+	.colonne1,{
+		width: 100%; 
+	}
+	
+	.colonne2{ 
+		width: 100%; 
+		text-align: center;
+	}
+	
+	.colonne3{
+		width: 100%; 
+		margin: 1% 0 1% 1.6%; 
+	}
+	  
+ 	.page-title{
 	  font-size: 18px;
-  }
+  	}
   
-  .fca_eoi_layout_0_headline_copy_wrapper {
-	  margin-right: 1px !important;
+  	.fca_eoi_layout_0_headline_copy_wrapper {
+		margin-right: 1px !important;
 	}	
 	
-
+	.front-page-content-area .with-featured-image > div {
+		position: absolute;
+	}
 	
 	.has-post-thumbnail {
 	  padding-top: 105px;
