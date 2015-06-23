@@ -92,8 +92,9 @@ div.pointelle-active {
 	background-color: #F7F9F7;
 	padding: 20px 20px 36px 20px;
 	-webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 30px;
 }
 
 .page .action-div{ 
