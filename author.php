@@ -27,16 +27,20 @@ get_header(); ?>
 
 		<div class="hero <?php echo forefront_additional_class(); ?>">
 <figure>
-					<?php
-			if ( '' != get_the_post_thumbnail() )
-				the_post_thumbnail( 'forefront-page-thumbnail' );
-		else {
-echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
-} ?>
+		<!--<?php
+					if ( '' != get_the_post_thumbnail() )
+						the_post_thumbnail( 'forefront-page-thumbnail' );
+				else {
+		echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
+		} ?>-->
+		<?php
+			echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
+		?>
 					<div>
 						<div>
 							<div>
-								<h1 class="page-title"><?php the_title(); ?></h1>
+								<!--<h1 class="page-title"><?php the_title(); ?></h1>-->
+								<h1 class="page-title"><?php the_author_meta( 'display_name', $authorId ); ?></h1>
 							</div>
 						</div>
 					</div>
