@@ -123,33 +123,51 @@ div.pointelle-active {
   margin-left: 60px;
 }
 
+
+
 h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
-  font-size: 12px;
-  text-transform: uppercase;
-  float: left;
-    line-height: 38px;
-  margin-right: 10px;
+	font-size: 12px;
+	text-transform: uppercase;
+	float: left;
+	line-height: 38px;
+	margin-right: 10px;
 }
+
 .fca_eoi_layout_0_email_field_wrapper{   /** Field email  Newsletter **/
- 
-  width: 260px!important;
-  float: left;
+ 	width: 260px!important;
+ 	float: left;
 }
+
 .fca_eoi_form_button_element{  /** bouton GO!  **/
 	
 	width: 50px!important;
-  float: left;
+	float: left;
 }
+
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-  background-color: #E2007A;
-  }
+	background-color: #E2007A;
+}
 
+div#action-weasy-opt-in-widget-3 { /** alignement  **/
+	float: left;
+	width: 50%;
+	margin-top: -10px;
+}
 
-.action-link{float: left; margin-right: 20px;} /** text faire un don ect  **/
-.action-wtext-2 a{color:#272626!important}      /** couleur lien text faire un don  **/
-.action-wtext-2 a:hover{color:#84B414!important}      /** couleur hover lien text faire un don  **/
-.action-wtext-2{  position: relative;                /** reglage pour l'oeil  **/
-  top: -2px;}
+.action-link{ /** text faire un don ect  **/
+	float: left; 
+	margin-right: 20px;
+} 
+.action-wtext-2 a{ /** couleur lien text faire un don  **/
+	color:#272626!important
+}      
+.action-wtext-2 a:hover{ /** couleur hover lien text faire un don  **/
+	color:#84B414!important
+}      
+.action-wtext-2{  
+	position: relative;                /** reglage pour l'oeil  **/
+	top: -2px;
+}
 
 .don-ico{                    /** Icon don  **/
   float: left;
