@@ -398,71 +398,6 @@ nav#site-navigation {
 }
 
 
-/**** MENU BLOG ****/
-
-div#action-wnav_menu-2{position: relative;}
-
-div#action-wnav_menu-2 ul {
-  	padding: 0; 
-  	margin: 0;
-	text-align: center; 
-}
-
-div#action-wnav_menu-2 li{
-	position: relative;
-	display: inline;
-	list-style: none;
-	padding-right: 15px;
-	
-}
-
-div#action-wnav_menu-2 {
-  margin-bottom: -13px;
-}
-
-a, a:active {
-  color: #13b813;
-  text-decoration: none;
-}
-
-a, a:visited {
-  color: #848984;
-  text-decoration: none;
-}
-
-
-/*      SUB MENU       */
-
-.action-wnav_menu-2 .sub-menu{display: none;
-   position: absolute;
-   left:0;
-   text-align: left!important;
-   margin:0;
-   width: 600px;
-   
-   }
-/*make the menu sub-menu items drop down on mouse hover */
-.action-wnav_menu-2 .menu-item-has-children:hover >.sub-menu {
-    display: block;
-       margin: 0;
-   
-}
-div#action-wnav_menu-2 .sub-menu li{
-
-display: list-item;}
-.action-wnav_menu-2 .sub-menu li a {
-padding: 5px;
-	
-	}
-.action-wnav_menu-2 .sub-menu li a {
-
-	background-color: #F7F9F7;
-	}
-..action-wnav_menu-2 .sub-menu li a:hover {
-
-	background-color: #E2007A;
-	color: #FFF;}
-
 	
   
 /**** FONTS  ****/
@@ -791,4 +726,81 @@ ul li a {
 	vertical-align: middle;
 }
 
+/* sous menu */
+div.action-wnav_menu-2{
+	position: relative;
+}
 
+div.action-wnav_menu-2 {
+	margin-bottom: -13px;
+}
+
+.action-wnav_menu-2 ul
+{
+	list-style:none;
+	position:relative;
+	padding: 0; 
+	margin: 0;
+}
+
+
+.action-wnav_menu-2 ul a
+{
+	display:block;
+	color:#848984;
+	text-decoration:none;
+	padding:0 15px;
+}
+
+.action-wnav_menu-2 ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+.action-wnav_menu-2 ul li.current-menu-item
+{
+	color:#13b813
+}
+
+.action-wnav_menu-2 ul li a:hover
+{
+	color:#13b813;
+}
+
+.action-wnav_menu-2 ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0;
+	background-color: #F7F9F7
+}
+
+.action-wnav_menu-2 ul ul li
+{
+	float:none;
+	width:200px
+}
+
+.action-wnav_menu-2 ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+.action-wnav_menu-2 ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+.action-wnav_menu-2 ul li:hover > ul
+{
+	display:block;
+	z-index: 999;
+}
