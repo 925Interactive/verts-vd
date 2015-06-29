@@ -56,13 +56,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
 		echo $html;
 		?>
 	<div class="author-contact">
 	    <?php 
+		if (get_the_author_meta( 'first_name', $authorId )) { the_author_meta( 'first_name', $authorId ); echo ' '; } 
+		if (get_the_author_meta( 'last_name', $authorId )) { the_author_meta( 'last_name', $authorId ); echo '</br>'; } 
 		if (get_the_author_meta( 'adresse', $authorId )) { the_author_meta( 'adresse', $authorId ); echo '</br>'; } 
 		if (get_the_author_meta( 'npa_ville', $authorId )) { the_author_meta( 'npa_ville', $authorId ); echo '</br>';} 
 		if (get_the_author_meta( 'telephone', $authorId )) { the_author_meta( 'telephone', $authorId ); echo '</br>';} 
@@ -81,7 +82,6 @@ get_header(); ?>
 				<?php endif; ?>
 
 	</div><!-- .author-description -->
-			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->

@@ -87,7 +87,7 @@ div.pointelle-active {
 /** widget Action = Faire un don | devenir membre  **/
 
 .action-div{
-	width: 98%;
+	width: 100%;
 	margin: auto;
 	background-color: #F7F9F7;
 	padding: 20px 20px 36px 20px;
@@ -291,7 +291,7 @@ nav#site-navigation {
 #nav-global-box > ul > li > a,
 #nav-global-box > ul > li > strong {
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: normal;
 	color: rgb(132,180,20,1);
 	background-color: white;
 	padding: 4px;
@@ -421,6 +421,14 @@ nav#site-navigation {
 						h1, h2, h3, h4, h5, h6, h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, li.menu-item > a, strong, b, .strong{
 					font-family: 'SanukOT-Bold' !important;
 				}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+	font-weight: normal;
+	margin-bottom: 12px;
+	color: #e10078;
+}
 				
 /*   Front page  */
 
@@ -804,3 +812,40 @@ div.action-wnav_menu-2 {
 	display:block;
 	z-index: 999;
 }
+
+
+/* Enlever les surcharges de bold */
+.page-title {
+	font-weight: normal;
+}
+
+.widget-title,
+.widget-title a,
+.widgettitle {
+	font-weight: normal;
+}
+
+b, strong {
+	font-family: 'SanukOT-Bold';
+	font-weight: normal;
+}
+
+
+/* Display Posts Shortcode */
+
+.display-posts-listing .listing-item {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.display-posts-listing img {
+    float: left;
+    margin: 7px 10px 10px 0;
+}
+
+a.title{
+	color: #e10078;
+	font-size: 20px;
+}
+
+
