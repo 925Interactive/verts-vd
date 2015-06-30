@@ -52,24 +52,46 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
-
+<span class="blog-thumbnail">
+		
 				<?php
 		echo $html;    // Affiche l'image du Memebre.. cf 
-		?>
-	<div class="author-contact">
-	    <?php 
-		if (get_the_author_meta( 'first_name', $authorId )) { the_author_meta( 'first_name', $authorId ); echo ' '; } 
-		if (get_the_author_meta( 'last_name', $authorId )) { the_author_meta( 'last_name', $authorId ); echo '</br>'; } 
+		echo '<div class=\'author-details\'>';
+		 echo '<div class=\'nommembre\'>';
+
+		 if (get_the_author_meta( 'first_name', $authorId )) { the_author_meta( 'first_name', $authorId ); echo ' '; } 
+		if (get_the_author_meta( 'last_name', $authorId )) { the_author_meta( 'last_name', $authorId ); echo '</br>'; }
+			
+		echo '</div>' ;
+		 echo '<div class=\'adressemembre\'>';
 		if (get_the_author_meta( 'adresse', $authorId )) { the_author_meta( 'adresse', $authorId ); echo '</br>'; } 
 		if (get_the_author_meta( 'npa_ville', $authorId )) { the_author_meta( 'npa_ville', $authorId ); echo '</br>';} 
+		echo '</div>' ;
+		echo '<div class=\'telmembre\'>';
 		if (get_the_author_meta( 'telephone', $authorId )) { the_author_meta( 'telephone', $authorId ); echo '</br>';} 
+		echo '</div>' ;
+		echo '<div class=\'socialmembre\'>';
+		echo '<div class=\'faceb\'>';
 		if (get_the_author_meta( 'facebook', $authorId )) { echo '<a href="'; the_author_meta( 'facebook', $authorId ); echo '">Facebook</a></br>';} 
+		echo '</div>' ;
+echo '<div class=\'twit\'>';
 		if (get_the_author_meta( 'twitter', $authorId )) { echo '<a href="'; the_author_meta( 'twitter', $authorId ); echo '">Twitter</a></br>';} 
+		echo '</div>' ;
+echo '<div class=\'urlweb\'>';
 		if (get_the_author_meta( 'url', $authorId )) { echo '<a href="'; the_author_meta( 'url', $authorId ); echo '">Site web</a></br>';} 
+echo '</div>' ;
+echo '</div>' ;
+echo '</div>' ;
+		
+				?>
+				
+		</span>
 
-	    ?>
-	</div>
+
+
+
+
+
 
 	<div class="author-description">
 	<?php if ( get_the_author_meta( 'description', $authorId ) ) : ?>
