@@ -714,6 +714,41 @@ ul li a {
 	color: #848984;
 }
 
+/* page elecfederales */
+
+.half{ width: 45%;
+	float: left;
+	margin: 20px;
+}
+.persona{ width: 31%;
+  float: left;
+  margin: 10px;}
+
+.persona img{
+	float: left;
+	margin-right: 10px;
+}
+
+.persona-info{
+	background-color: #EDEDED;
+	padding: 10px;
+	float: left;
+	width: 50%;
+}
+
+.persona h4{font-size: 18px;}
+
+.persona p {
+  margin: 0px;
+  padding: 0px;
+  line-height: 24px;
+}
+
+hr.clear {
+	height: 0px!important;
+	clear: both;
+	background-color:none!important;
+}
 /***  Blog  ***/
 
 @media screen and (min-width: 1230px){

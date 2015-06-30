@@ -49,5 +49,5 @@ echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-<div class="action-div"> <?php dynamic_sidebar( 'blockaction' ); //Sidebar pour dont contact et newsletter  ?> </div>
+
 <?php get_footer(); ?>
