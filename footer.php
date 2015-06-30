@@ -35,9 +35,9 @@
 		<div class="menu-footer">
 					<p>
 						 <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cal-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>events/ "> Calendrier </a>
-                        <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>medias/ "> Contact </a>
-										 <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/membre-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>events/ "> Devenir Membre </a>
-                        <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/don-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>medias/ "> Faire un don </a>
+                        <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>accueil/contact/ "> Contact </a>
+										 <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/membre-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>devenir-membre/ "> Devenir Membre </a>
+                        <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/don-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>nous-soutenir "> Nous soutenir </a>
 						
 					</p>
 				</div>

@@ -23,19 +23,12 @@ $html = '<img src="'.$avatar.'" alt="Une photo de '.$name.'"/>';
 
 get_header(); ?>
 
-	<?php while ( have_posts() ) : the_post(); ?>
-
-		<div class="hero <?php echo forefront_additional_class(); ?>">
+<div class="hero <?php echo forefront_additional_class(); ?>">
 <figure>
-		<!--<?php
-					if ( '' != get_the_post_thumbnail() )
-						the_post_thumbnail( 'forefront-page-thumbnail' );
-				else {
-		echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
-		} ?>-->
 		<?php
-			echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
-		?>
+					{
+		echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
+		} ?>	
 					<div>
 						<div>
 							<div>
@@ -47,8 +40,12 @@ get_header(); ?>
 				</figure>
 
 	</div>		
-			<div class="action-div"> <?php dynamic_sidebar( 'blockaction' ); //Sidebar pour dont contact et newsletter  ?> </div>
+			<!-- <div class="action-div"> <?php dynamic_sidebar( 'blockaction' ); //Sidebar pour dont contact et newsletter  ?> </div> -->
 
+
+	<?php while ( have_posts() ) : the_post(); ?>
+
+		
 	<?php endwhile; ?>
 
 	<?php rewind_posts(); ?>
@@ -58,7 +55,7 @@ get_header(); ?>
 
 
 				<?php
-		echo $html;
+		echo $html;    // Affiche l'image du Memebre.. cf 
 		?>
 	<div class="author-contact">
 	    <?php 

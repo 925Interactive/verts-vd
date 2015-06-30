@@ -846,6 +846,10 @@ b, strong {
 a.title{
 	color: #e10078;
 	font-size: 20px;
+	display: block;
 }
 
+a.more-link {
+  float: right;
+}
 
