@@ -496,3 +496,4 @@ function new_search_button($text) {
 $text = str_replace('value="Rechercher"', 'value="GO!"', $text);
 return $text;
 }
+

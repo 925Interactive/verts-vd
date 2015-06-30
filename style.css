@@ -752,7 +752,6 @@ div.action-wnav_menu-2 {
 	position:relative;
 	padding: 0; 
 	margin: 0;
-	left: 50%;
 }
 
 
@@ -857,43 +856,4 @@ a.more-link {
   float: right;
 }
 
-/* Liste alphabétique des membres */
 
-div#liste-membres-alphabet {
-	background-color: #f7f9f7;
-	width: 100%;
-	text-align: center;
-	font-size: 24px;
-}
-
-div#liste-membres-alphabet li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-div#liste-membres-alphabet li:not(:last-child) {
- 	border-right: 1px solid #E3E3E3;
-}
-
-a:hover, a:focus {
-	color: #E2007A;
-}
-
-div#liste-membres a:visited{
-	color: #3add3a
-}
-
-.alphabet a{
-	color: #E2007A;
-	font-size: 25px; 
-}
-
-.nom-membres{
-	padding-left: 24px;
-	background: url(img/membres.svg);
-	background-size: 20px 20px;
-	background-repeat: no-repeat;
-	background-position-y: 2px;
-}
