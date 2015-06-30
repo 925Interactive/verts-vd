@@ -856,4 +856,8 @@ a.more-link {
   float: right;
 }
 
+/* Articles sur la home */
 
+.featured-post h4 a{
+	color: #e10078;
+}
