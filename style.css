@@ -741,6 +741,9 @@ div.action-wnav_menu-2{
 
 div.action-wnav_menu-2 {
 	margin-bottom: -13px;
+	float: right;
+	left: -50%;
+	position: relative;
 }
 
 .action-wnav_menu-2 ul
@@ -812,12 +815,6 @@ div.action-wnav_menu-2 {
 {
 	display:block;
 	z-index: 999;
-}
-
-.menu-menu-section-morges-container {
-	float: right;
-	left: -50%;
-	position: relative;
 }
 
 
