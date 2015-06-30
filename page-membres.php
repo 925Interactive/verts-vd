@@ -62,14 +62,17 @@ foreach ($users_alphabet as $letter => $users) {
 ?>
 </ul>
 </div>
+<div id="liste-membres">
 <?php
 foreach ($users_alphabet as $letter => $users) {
-    echo '<p><a name="noms'.$letter.'">'.$letter.'</a></p>';
+    echo '<p class="lettre-membres"><a name="noms'.$letter.'">'.$letter.'</a></p>';
     foreach ($users as $name => $id) {
-	echo '<p><a href="/membres/'.get_the_author_meta('user_nicename', $id).'/">'.$name.'</a></p>';
+	echo '<p class="noms-membres"><a href="/membres/'.get_the_author_meta('user_nicename', $id).'/">'.$name.'</a></p>';
     }
 }
 ?>
+
+</div>
 
 
 

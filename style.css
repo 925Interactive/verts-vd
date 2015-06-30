@@ -862,3 +862,44 @@ a.more-link {
 .featured-post h4 a{
 	color: #e10078;
 }
+
+/* page membres */
+
+a, a:visited, a:active {
+  color: #13b813;
+  text-decoration: none;
+}
+
+div#liste-membres-alphabet{
+	text-align: center;
+	font-size: 24px;
+	background-color: #f7f9f7;
+}
+
+div#liste-membres-alphabet li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	
+}
+
+div#liste-membres-alphabet li:not(:last-child) { 
+    border-right: 1px solid #d7d9d7; 
+} 
+
+.lettre-membres a{
+	color: #E2007A;
+	font-size: 24px;
+}
+
+.noms-membres a{
+	padding-left: 25px;
+	background: url(img/membres.svg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+}
+
+.noms-membres a:hover{
+	color: #E2007A;
+}
