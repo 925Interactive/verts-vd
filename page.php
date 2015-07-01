@@ -44,8 +44,11 @@ echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-							<?php endwhile; // end of the loop. ?>
+				<?php get_template_part( 'content', 'page' ); ?>
 
+				
+
+			<?php endwhile; // end of the loop. ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
