@@ -138,6 +138,31 @@ function forefront_posted_on() {
 	endif;
 }
 endif;
+if ( ! function_exists( 'forefront_posted_on_home' ) ) :
+/**
+ * Prints HTML with meta information for the current post-date/time and author.
+ */
+function forefront_posted_on() {
+	if ( is_sticky() && is_home() && ! is_paged() ) :
+		printf( __( '<span class="sticky-post">Sticky</span><span class="byline"><span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span></span>', 'forefront' ),
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			esc_attr( sprintf( __( 'View all posts by %s', 'forefront' ), get_the_author() ) ),
+			esc_html( get_the_author() )
+		);
+	else :
+		printf( __( '<span class="entry-date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'forefront' ),
+			esc_url( get_permalink() ),
+			esc_attr( get_the_time() ),
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() ),
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			esc_attr( sprintf( __( 'View all posts by %s', 'forefront' ), get_the_author() ) ),
+			esc_html( get_the_author() )
+		);
+	endif;
+}
+endif;
+
 /**
  * Returns true if a blog has more than 1 category
  */

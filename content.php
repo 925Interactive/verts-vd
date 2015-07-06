@@ -34,9 +34,36 @@
 			?>
 		<?php endif; ?>
 
-		<div class="entry-meta clear">
+<?php	if( is_main_site() ) { ?>  <!-- si c'est le site principal pas de nom d'autheur dans les meta -->
+
+<div class="entry-meta clear">
+			
+			<?php 
+				printf( __( '<span class="entry-date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span> ', 'forefront' ),
+			esc_url( get_permalink() ),
+			esc_attr( get_the_time() ),
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() ),
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			esc_attr( sprintf( __( 'View all posts by %s', 'forefront' ), get_the_author() ) ),
+			esc_html( get_the_author() )
+		);
+
+			?>
+
+			<?php edit_post_link( __( 'Edit', 'forefront' ), '<span class="edit-link">', '</span>' ); ?>
+
+			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+				
+			<?php endif; ?>
+		</div><!-- .entry-meta -->
+		
+   
+<?php } else {  ?>         <!-- si ce n'est pas le site principal alors affiche nom d'autheur dans les meta -->
+
+<div class="entry-meta clear">
 			<?php if ( false != get_post_format() ) : ?>
-				<span class="entry-format">
+						<span class="entry-format">
 					<a href="<?php echo esc_url( get_post_format_link( get_post_format() ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'All %s posts', 'forefront' ), get_post_format_string( get_post_format() ) ) ); ?>"><?php echo get_post_format_string( get_post_format() ); ?></a>
 				</span>
 			<?php endif; ?>
@@ -49,9 +76,18 @@
 			<?php edit_post_link( __( 'Edit', 'forefront' ), '<span class="edit-link">', '</span>' ); ?>
 
 			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'forefront' ), __( '1 Comment', 'forefront' ), __( '% Comments', 'forefront' ) ); ?></span>
+				<!-- <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'forefront' ), __( '1 Comment', 'forefront' ), __( '% Comments', 'forefront' ) ); ?></span>   masquer commentaire link -->  
 			<?php endif; ?>
 		</div><!-- .entry-meta -->
+   
+<?php } ?>
+
+
+
+
+
+
+		
 
 	</header><!-- .entry-header -->
 

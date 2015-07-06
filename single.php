@@ -6,7 +6,23 @@
  */
 
 get_header(); ?>
-	<!-- <div class="action-div"> <?php dynamic_sidebar( 'blockaction' );  ?> </div> -->
+<div class="hero <?php echo forefront_additional_class(); ?>">
+<figure>
+					<?php
+			
+echo '<img src="' . get_bloginfo('stylesheet_directory') . '/img/default.jpg" />';
+ ?>
+					<div>
+						<div>
+							<div>
+								<h1 class="page-title"><?php the_title(); ?></h1>
+							</div>
+						</div>
+					</div>
+				</figure>
+
+	</div>
+	<div class="action-div"> <?php dynamic_sidebar( 'blockaction' ); //Sidebar pour dont contact et newsletter  ?> </div>
 
 	<div id="primary" class="content-area">
 
