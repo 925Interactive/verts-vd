@@ -484,6 +484,44 @@ a.read-more{ color: #E2007A}
 
 }
 
+.icones{
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+.icon-calendrier{
+	background: url(img/cal-ico.png);
+	background:rgba(0,0,0,0) url(img/cal-ico.svg);
+	padding-left: 25px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+
+}
+
+.icon-membre{
+	background: url(img/membre-ico.png);
+	background:rgba(0,0,0,0) url(img/membre-ico.svg);
+	padding-left: 25px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+}
+
+.icon-contact{
+	background: url(img/contact-ico.png);
+	background:rgba(0,0,0,0) url(img/contact-ico.svg);
+	padding-left: 25px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+}
+
+.icon-soutien{
+	background: url(img/don-ico.png);
+	background:rgba(0,0,0,0) url(img/don-ico.svg);
+	padding-left: 25px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+}
+
 .site-footer{
 	background-color: transparent;
 	padding-top: 0px;
@@ -495,6 +533,61 @@ a.read-more{ color: #E2007A}
 .site-info a:active, .site-info a:visited{
 	color: white!important;
 }
+
+.site-real{
+  color: white;
+  font-size: 12px;
+  
+}
+www.verts-vd.ch/media="all"
+.site-real, .site-real a {
+  color: white !important;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.icon-925 {
+	background: url(img/logoblanc_130x130.png) no-repeat center center;
+	background:rgba(0,0,0,0) url(img/logoblanc_130x130.svg) no-repeat center center;
+}
+
+#colophon a {
+	color: white;
+}
+
+.signature{
+  height:40px;
+  display:table-cell;
+  vertical-align:middle;
+  position:relative;
+}
+.logo-925{
+  color: #546D76;
+  text-decoration:none;
+  }
+
+.logo-925{
+ content: "";
+ background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rInZpZXdCb3g9IjAgMCAxMTQuOSAxMTMuMyI+PHBhdGggZmlsbD0iIzAwQUVFRiIgZD0iTTExNC40LDU0LjhjLTEuMy02LjEtNC40LTEwLjgtOS41LTE0LjFjLTUtMy4zLTEwLjYtNC4zLTE2LjctM2wtNC40LDAuOWwtMS4yLTUuOGwxOS40LTQgCQljMy44LTAuOCw1LjMtMy4xLDQuNS02LjljLTAuNC0xLjctMS4yLTMtMi40LTMuOGMtMS4zLTAuOC0yLjctMS4xLTQuNC0wLjdsLTI1LjIsNS4yYy0wLjcsMC4xLTEuNCwwLjQtMS45LDAuOCAJCWMtMS43LTMuNC00LjMtNi4yLTcuNi04LjRDNTkuNywxMS43LDU0LDEwLjcsNDcuOCwxMmMtNi4yLDEuMy0xMSw0LjUtMTQuNCw5LjZjLTIuOSw0LjUtMy44LDguNS0zLjcsMTIuMWwtMTIsMi41IAkJYy02LDEuMy0xMC43LDQuNC0xNC4xLDkuNWMtMy4zLDUuMS00LjQsMTAuNi0zLjEsMTYuNkMxLjgsNjguNSw1LDczLjIsMTAsNzYuNWM1LDMuMywxMC42LDQuMywxNi43LDNsNC40LTAuOWwxLjIsNS44bC0xOS40LDQgCQljLTMuOCwwLjgtNS4zLDMuMS00LjUsNi45YzAuNCwxLjcsMS4yLDMsMi40LDMuOGMxLjMsMC44LDIuNywxLjEsNC40LDAuN2wyNS4yLTUuMmMwLjctMC4xLDEuNC0wLjQsMS45LTAuOCAJCWMxLjcsMy40LDQuMyw2LjIsNy42LDguNGM1LjIsMy4zLDEwLjksNC40LDE3LjEsMy4xYzYuMi0xLjMsMTEtNC41LDE0LjQtOS42YzIuOS00LjUsMy44LTguNSwzLjctMTIuMWwxMi0yLjUgCQljNi0xLjMsMTAuNy00LjQsMTQuMS05LjVDMTE0LjYsNjYuNCwxMTUuNiw2MC45LDExNC40LDU0Ljh6IE0zNS42LDY1LjdjLTAuMSwwLTAuMywwLjEtMC40LDAuMWMtMC4yLDAtMC41LDAuMS0wLjcsMC4xbC0xMC4yLDIuMSAJCWMtMi44LDAuNi01LjQsMC4xLTcuOS0xLjVDMTQsNjUsMTIuNSw2Mi44LDEyLDYwYy0wLjYtMi44LTAuMS01LjQsMS41LTcuOGMxLjYtMi40LDMuOC0zLjksNi42LTQuNWwxOC0zLjhjMS43LTAuNCwzLTEuMiwzLjgtMi41IAkJYzAuOC0xLjIsMS0yLjYsMC44LTQuMWMwLTAuMSwwLTAuMi0wLjEtMC4zYy0xLjEtNS4xLTAuNy02LjMsMC45LTguN2MxLjYtMi40LDMuOC00LDYuNy00LjZjMi45LTAuNiw1LjYtMC4xLDgsMS41IAkJYzIuNSwxLjYsNCwzLjgsNC42LDYuN0M2NC4zLDM4LjgsNTUuMSw2MS43LDM1LjYsNjUuN3ogTTEwMS40LDY1Yy0xLjYsMi40LTMuOCwzLjktNi42LDQuNWwtMTgsMy44Yy0xLjcsMC40LTIuOSwxLjItMy44LDIuNSAJCWMtMC44LDEuMi0xLDIuNi0wLjgsNC4xYzAsMC4xLDAsMC4yLDAuMSwwLjNjMS4xLDUuMSwwLjcsNi4zLTAuOSw4LjhjLTEuNiwyLjQtMy44LDQtNi43LDQuNmMtMi45LDAuNi01LjYsMC4xLTgtMS41IAkJYy0yLjUtMS42LTQtMy44LTQuNi02LjdjLTEuNC02LjksNy44LTI5LjgsMjcuMy0zMy45YzAuMSwwLDAuMy0wLjEsMC40LTAuMWMwLjIsMCwwLjUtMC4xLDAuNy0wLjFsMTAuMi0yLjEgCQljMi44LTAuNiw1LjQtMC4xLDcuOSwxLjVjMi40LDEuNiwzLjksMy44LDQuNSw2LjZDMTAzLjUsNjAsMTAzLDYyLjcsMTAxLjQsNjV6Ii8+IDwvc3ZnPg==)no-repeat right 0px;
+padding-right:20px;
+}
+
+.sign{
+position: absolute;
+width: 120px;
+height: 120px;
+left:160px;
+	background: url(http://www.925.ch/sign/925-sign.gif) #FFF no-repeat;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+border-radius: 20px;
+ border: 2px solid #00ADEF;
+	opacity: .2;
+-ms-transform: rotate(30deg); /* IE 9 */
+-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+transform: rotate(30deg);
+}
+
 
 
 
@@ -535,11 +628,14 @@ a.read-more{ color: #E2007A}
 .colonne3{
 	display: block;
 	float:left;
-	margin: 1% 0 1% 12.6%;
+	margin: 0% 0 1% 12.6%;
     width: 25.6%;
     text-align: right;
 }
-.colonne3 p{text-align: left;}
+.colonne3 p{
+	text-align: left;
+	margin-bottom: 15px;
+}
 .colonne3 a{ color: #FFF;}
 
  .colonne3 a:visited{
@@ -633,6 +729,7 @@ div#rm-additional-content #homeV {
 		padding: 12px 0 0;
 	}
 	
+
 	
 
 }
@@ -649,10 +746,9 @@ div#rm-additional-content #homeV {
 	
 @media screen and (min-width: 930px) {
 	.navigation-main {
-	max-width: 900px !important;
+		max-width: 900px !important;
 	}	
-}
-	
+
 }
 
 
@@ -662,6 +758,7 @@ div#rm-additional-content #homeV {
 	.site-footer {
   padding-left: 30px;
 }
+
 }
 
 /***  Pages  ***/
@@ -991,3 +1088,25 @@ div#liste-membres-alphabet li:not(:last-child) {
 }
 .urlweb  a{color:  #AEAEAE;}
 .urlweb a:hover{color:  #E10078;}
+
+img.pointelle_slider_thumbnail.full.pointelle_slider_thumbnail{
+	/* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 1.2em 0 0 0;
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 1.2em 0 0 0;
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 1.2em 0 0 0;
+}
+
+.pointelle-slider-nav.pointelle-active:first-child {	
+	/* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 0 1.2em 0 0;
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 0 1.2em 0 0;
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 0 1.2em 0 0;
+}
