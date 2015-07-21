@@ -537,6 +537,9 @@ a.read-more{ color: #E2007A}
 .site-real{
   color: white;
   font-size: 12px;
+    float: right;
+  margin-top: -20px;
+  margin-right: -60px;
   
 }
 www.verts-vd.ch/media="all"
@@ -728,7 +731,15 @@ div#rm-additional-content #homeV {
 	#socialmedia{
 		padding: 12px 0 0;
 	}
-	
+	.site-real{
+  color: white;
+  font-size: 12px;
+    float: left;
+  margin-top: 0px;
+  margin-right:0px;
+  
+}
+
 
 	
 
@@ -742,7 +753,7 @@ div#rm-additional-content #homeV {
 	.navigation-main {
 	max-width: 757px;
 	}
-}
+	}
 	
 @media screen and (min-width: 930px) {
 	.navigation-main {

@@ -34,13 +34,13 @@
 	<div class="colonne3">
 		<div class="menu-footer">
 					<p>
-						 <!--<br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cal-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>events/ "> Calendrier </a>-->
+			
 						 <p><span class="icones icon-calendrier"></span><a href="<?php echo network_home_url(); ?>events/ "> Calendrier </a></p>
-                        <!--<br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>accueil/contact/ "> Contact </a>-->
+                     
                         <p><span class="icones icon-contact"></span><a href="<?php echo network_home_url(); ?>accueil/contact/ "> Contact </a></p>
-										<!-- <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/membre-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>devenir-membre/ "> Devenir Membre </a>-->
+	
 						<p><span class="icones icon-membre"></span><a href="<?php echo network_home_url(); ?>devenir-membre/ "> Devenir Membre </a></p>
-                       <!-- <br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/don-ico.svg" width="30px"/><a href="<?php echo network_home_url(); ?>nous-soutenir "> Nous soutenir </a>-->
+                
                         <p><span class="icones icon-soutien"></span><a href="<?php echo network_home_url(); ?>nous-soutenir"> Nous soutenir </a></p>
 						
 					</p>
@@ -54,34 +54,10 @@
 		</div>
 		<br/>
 		<div class="site-real">
-			<!--<a href="http://www.925.ch" rel="designer" class="logo-925" target="_blank"><span aria-hidden="true" class="icon-925 big">   </span>
-			</a>
-				<script type="text/javascript">
-				
-					jQuery(document).ready (function(){
-                       jQuery('.logo-925').on('mouseover ',function(){
-                       var sign= $('<span class="sign"></span>');
-                       jQuery('.icon-925').append(sign);
-                      $( '.sign' ).animate({
-                      opacity: 1,
-                      bottom:"+20",
-                      rotate:"5",
-}, 800, function() {
-// Animation complete.
-});		                          
-                      
-                       });	
-                       jQuery('.logo-925').on('mouseout ',function(){
-                       
-                       jQuery('span.sign').remove();
-                         $( this ).fadeTo( "slow", 1 );
-                       });	
-                       
-                       
-                      });
-				</script>-->
-				<p>Réalisation:
-				<a href="http://925.ch" target="_blank" title="925interactive"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logoblanc_130x130.svg" width="20px"/></a> - <a href="http://whyopencomputing.ch/" target="_blank" title="why open computing">Why	</a>	
+			
+			
+				<p class="realisation">Réalisation:
+				<a href="http://925.ch" target="_blank" title="925interactive"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logoblanc_130x130.svg" width="20px"/></a> & <a href="http://whyopencomputing.ch/" target="_blank" title="why open computing">Why	</a>	
 				</p>	
 		</div>
 		
