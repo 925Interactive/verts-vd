@@ -32,6 +32,9 @@
 <meta name="msapplication-TileColor" content="#00a300">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<script src="http://canvg.googlecode.com/svn/trunk/rgbcolor.js"></script>
+  <script src="http://canvg.googlecode.com/svn/trunk/canvg.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
 <?php wp_head(); ?>
 </head>
 
