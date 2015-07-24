@@ -46,7 +46,7 @@ function my_theme_register_required_plugins() {
     $plugins = array(
 
         // REQUIRED PLUGIN from Github to allow automatic Updates of the Theme itself, that is hosted on github
-	    array(
+	   /* array(
             'name'               => 'GitHub updater', // The plugin name.
             'slug'               => 'github-updater', // The plugin slug (typically the folder name).
             'source'             => get_stylesheet_directory() . '/lib/plugins/github-updater.zip', // The plugin source.
