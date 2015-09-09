@@ -19,11 +19,11 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css' );
 // BEGIN REQUIRED PLUGIN ACTIVATION
 /**
  * Include the TGM_Plugin_Activation class.
- */
+
 require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
-
+ */
 
 /**
  * Register the required plugins for this theme.
@@ -37,12 +37,14 @@ add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
  * This function is hooked into tgmpa_init, which is fired within the
  * TGM_Plugin_Activation class constructor.
  */
+ /*
 function my_theme_register_required_plugins() {
 
     /**
      * Array of plugin arrays. Required keys are name and slug.
      * If the source is NOT from the .org repo, then source is also required.
      */
+      /*
     $plugins = array(
 
         // REQUIRED PLUGIN from Github to allow automatic Updates of the Theme itself, that is hosted on github
@@ -70,6 +72,8 @@ function my_theme_register_required_plugins() {
 
 		*/
         // REQUIRED PLUGINS from the WordPress Plugin Repository.
+         /** 
+        
         array(
             'name'      => 'Wordpress Jetpack',
             'slug'      => 'jetpack',
@@ -96,14 +100,14 @@ function my_theme_register_required_plugins() {
         ), // Use Any Font API Key: 3NA6H7UFBZOGTS2D5BCLV4D150428113331
         */
 
-        array(
+       /** array(
             'name'      => 'Social Media Sharing-Buttons (Sidebar)',
             'slug'      => 'custom-share-buttons-with-floating-sidebar',
             'required'  => false,
         ),
+        **/
 
-
-
+ /*
     );
 
     /**
@@ -113,6 +117,7 @@ function my_theme_register_required_plugins() {
      * Some of the strings are added into a sprintf, so see the comments at the
      * end of each line for what each argument will be.
      */
+      /*
     $config = array(
         'default_path' => '',                      // Default absolute path to pre-packaged plugins.
         'menu'         => 'tgmpa-install-plugins', // Menu slug.
@@ -263,10 +268,16 @@ add_filter( 'admin_head', 'mc_edit_permission_check', 1, 4 );
  * Displays the needed social networks and contact methods
  */
 function my_new_contactmethods( $contactmethods ) {
+    $contactmethods['public_mail'] = 'Adresse mail publique';
+
     // Add Twitter
     $contactmethods['twitter'] = 'Twitter';
     //add Facebook
     $contactmethods['facebook'] = 'Facebook';
+
+    $contactmethods['instagram'] = 'Instagram';
+
+
     $contactmethods['telephone'] = 'Telephone';
     $contactmethods['adresse'] = 'Adresse';
     $contactmethods['npa_ville'] = 'NPA et Localité';
@@ -276,6 +287,7 @@ function my_new_contactmethods( $contactmethods ) {
     unset($contactmethods['yim']);
     unset($contactmethods['googleplus']);
     unset($contactmethods['jabber']);
+    unset($contactmethods['dbem_phone']);
     return $contactmethods;
 }
 add_filter('user_contactmethods','my_new_contactmethods',10,1);
