@@ -32,10 +32,9 @@
 <meta name="msapplication-TileColor" content="#00a300">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<script src="http://canvg.googlecode.com/svn/trunk/rgbcolor.js"></script>
-  <script src="http://canvg.googlecode.com/svn/trunk/canvg.js"></script>
-  <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
-<?php wp_head(); ?>
+<script type="text/javascript" src="http://gabelerner.github.io/canvg/rgbcolor.js"></script> 
+<script type="text/javascript" src="http://gabelerner.github.io/canvg/StackBlur.js"></script>
+<script type="text/javascript" src="http://gabelerner.github.io/canvg/canvg.js"></script> <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,7 +43,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<a href="<?php echo network_home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="header-image-link">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/verts-vd-logo.svg" width="220px"  alt="" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/verts-vd-logo.svg" width="220px" height="109px" alt="Les Verts" />
 				</a>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>

@@ -12,15 +12,15 @@
 	
 	<div class="colonne1">
 		<p>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/lesverts.svg" width="25px"/> <strong>Les Verts, mouvement écologiste vaudois</strong>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/lesverts.svg" width="25px" height="20px"/> <strong>Les Verts, mouvement écologiste vaudois</strong>
 			</p>
 				<div class="adresse">
 					<p>
 						<br/>Place Palud 7
 						<br/>1003 Lausanne
-						<br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/phone.svg" width="15px"/> 021 351 36 30
-						<br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fax.svg" width="15px"/> 021 351 36 31
-						<br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.svg" width="15px"/> verts(at)verts-vd.ch
+						<br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/phone.svg" width="15px" height="15px"/> 021 351 36 30
+						<br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fax.svg" width="15px" height="15px"/> 021 351 36 31
+						<br/><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.svg" width="15px" height="15px"/> verts(at)verts-vd.ch
 						<br/>CCP : 65-90000-6
 					</p>
 				</div>
@@ -28,7 +28,7 @@
 	
 	
 	<div class="colonne2">
-		<a href="<?php echo network_home_url(); ?>medias/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/medias.svg" width="300px"/></a>
+		<a href="<?php echo network_home_url(); ?>medias/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/medias.svg" width="300px" height="100%"/></a>
 	</div>
 	
 	<div class="colonne3">
