@@ -1,0 +1,5 @@
+22:27:58: /var/folders/xk/_s69hmln2t56372jzfl1d97w0000gp/T/poeditkRRhIR/ref.pot:37: duplicate message definition...
+22:27:58: /var/folders/xk/_s69hmln2t56372jzfl1d97w0000gp/T/poeditkRRhIR/ref.pot:21: ...this is the location of the first definition
+22:27:58: /Applications/Poedit.app/Contents/MacOS/msgmerge: found 1 fatal error
+22:27:58: Certaines entrées du catalogue sont probablement incorrectes.
+22:27:58: La mise à jour du catalogue a échoué. Cliquez sur « Détails >> » pour en savoir plus.

@@ -38,7 +38,7 @@ body {
 }
 
 #masthead.site-header, .content-area {
-	position: relative;
+	/*position: relative;*/
 }
 
 /*  titre du site masquer*/
@@ -285,9 +285,11 @@ span.leerzeichen::before {
 
 
 nav#site-navigation {
-  position: absolute;
-  right: 24px;
-  top: 127px;
+ 
+      position: relative;
+    right: -299px;
+    top: 111px;
+
 }
 
 
@@ -765,12 +767,6 @@ div#rm-additional-content #homeV {
 
 
 
-@media(min-width:1200px){
-	.site-footer {
-  padding-left: 30px;
-}
-
-}
 
 /***  Pages  ***/
 
@@ -821,6 +817,13 @@ div#search {
 	white-space: nowrap;
 }
 
+nav#site-navigation {
+ 
+      position: relative;
+    right: -199px;
+    top: 111px;
+
+}
 /***  Listes  ***/
 
 ol, ul {
@@ -870,11 +873,34 @@ hr.clear {                       /* Reset retour à la ligne forcé */
 .page-template-full-width-page .entry-content { margin-left: 10px;}     /* marges de côté de l'article */
 /***  Blog  ***/
 
+
+@media(min-width:1200px){
+	.site-footer {
+  padding-left: 30px;
+}
+
+nav#site-navigation {
+ 
+      position: relative;
+    right: -229px;
+    top: 111px;
+
+}
+
+}
+
 @media screen and (min-width: 1230px){
 	.blog-thumbnail {
 	  margin-right: -57px;
 	  margin-left: -90px;
 	}
+	nav#site-navigation {
+ 
+      position: relative;
+    right: -299px;
+    top: 111px;
+
+}
 }
 
 .blog-thumbnail {
