@@ -38,7 +38,7 @@ body {
 }
 
 #masthead.site-header, .content-area {
-	/*position: relative;*/
+position: relative;
 }
 
 /*  titre du site masquer*/
@@ -286,7 +286,7 @@ span.leerzeichen::before {
 
 nav#site-navigation {
  
-      position: relative;
+      position: absolute;
     right: -299px;
     top: 111px;
 
@@ -819,9 +819,9 @@ div#search {
 
 nav#site-navigation {
  
-      position: relative;
-    right: -199px;
-    top: 111px;
+      position: absolute;
+   right: 30px;
+top: 131px;
 
 }
 /***  Listes  ***/
@@ -881,10 +881,9 @@ hr.clear {                       /* Reset retour à la ligne forcé */
 
 nav#site-navigation {
  
-      position: relative;
-    right: -229px;
-    top: 111px;
-
+      position: absolute;
+    right: 31px;
+    top: 132px;
 }
 
 }
@@ -896,9 +895,9 @@ nav#site-navigation {
 	}
 	nav#site-navigation {
  
-      position: relative;
-    right: -299px;
-    top: 111px;
+      position: absolute;
+    right: 81px;
+top: 131px;
 
 }
 }
