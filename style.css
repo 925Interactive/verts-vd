@@ -119,10 +119,14 @@ div.pointelle-active {
   
 .content-area {
   padding-top: 70px;
-  width: 100%;
+  width: 60%;
   margin-left: 60px;
 }
-
+ #primary-home{
+  
+  width: 100%;
+  
+}
 
 
 h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
@@ -140,6 +144,9 @@ h3.fca_eoi_layout_0_headline_copy_wrapper { /** Titre Newsletter  **/
 div#fca_eoi_form_287 {
   position: relative;
   left: 11px;
+}
+p.fca_eoi_layout_0_submit_button_wrapper { /** aligement bout GO**/
+    margin-bottom: 0px;
 }
 .fca_eoi_form_button_element{  /** bouton GO!  **/
 	
@@ -761,6 +768,13 @@ div#rm-additional-content #homeV {
 	.navigation-main {
 		max-width: 900px !important;
 	}	
+	
+	.content-area {
+		margin: 0 20px 0 60px;
+	}
+	.site-content {
+		margin: 0 13px 0 0;
+	}
 
 }
 
@@ -788,6 +802,14 @@ div#search {
 	.navigation-main {
 	  max-width: 1100px;
 	}
+	
+	.content-area {
+		margin: 0 20px 0 60px;
+	}
+	.site-content {
+		margin: 0 13px 0 0;
+	}
+
 }
 
 .navigation-main ul ul {
